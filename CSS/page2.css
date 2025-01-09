@@ -1,0 +1,232 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .page-link {
+    color: #f0a500;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #f0a500;
+    border-color: #f0a500;
+}
+body {
+    background-color: #1E201E;
+}
+
+/* Navbar styling */
+.navbar .nav-link {
+    margin-right: 2.5rem;
+    background-color: #1E201E;
+    color: white;
+    
+    
+}
+
+.navbar a:hover {
+    font-size: 16px;
+    color: #f0a500;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Search bar styling */
+.container .form-control {
+    background-color: #C0C0C0; 
+    border: none;
+    border-radius: 50px;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffd700; 
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    
+}
+.card-img-top{
+    height:230px;
+    width:100%;
+}
+
+.card-body .card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+.card-body .speaker-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-link {
+    color: #ffffff; /* White color for "Click to more" */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767.98px) {
+    .navbar .nav-link {
+        margin-right: 1rem;
+    }
+    
+    .card-body .card-text {
+        font-size: 14px;
+    }
+    
+    .btn-link {
+        font-size: 14px;
+    }
+}
+
+/* Tablet view adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .nav-link {
+        margin-right: 2rem;
+    }
+    
+    .card-body .card-text {
+        font-size: 15px;
+    }
+    
+    .btn-link {
+        font-size: 15px;
+    }
+}
+
+/* Desktop view adjustments */
+@media (min-width: 992px) {
+    .navbar .nav-link {
+        margin-right: 3rem;
+    }
+    
+    .card-body .card-text {
+        font-size: 16px;
+    }
+    
+    .btn-link {
+        font-size: 16px;
+    }
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Scale-up on hover animation */
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Apply fade-in animation to event cards */
+#eventCards .card {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0; /* Start hidden */
+}
+
+/* Slide-in animation for the filters section */
+.filters {
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+}
+
+/* Button hover effect */
+.btn-link {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn-link:hover {
+    animation: scaleUp 0.3s ease-in-out forwards;
+    background-color: #005555; /* Slightly darker teal */
+    color: white;
+}
+
+/* Additional delay to make the animation staggered */
+#eventCards .card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+#eventCards .card:nth-child(2) {
+    animation-delay: 0.6s;
+}
+/* Add more delay for additional cards as needed */
+/* Highlight active page number */
+.page-item.active .page-link {
+    background-color: #008080;
+    color: white;
+}
+/* Page animations */
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+

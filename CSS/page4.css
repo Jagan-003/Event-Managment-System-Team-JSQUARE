@@ -1,0 +1,266 @@
+
+/* Navbar styling */
+.navbar .nav-link {
+    margin-right: 2.5rem;
+    background-color: #1E201E;
+    color: white;
+    transition: background-color 0.3s ease;
+    
+}
+
+.navbar a:hover {
+    font-size: 16px;
+    color: #f0a500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.bg-color{
+    background-color: #1E201E;
+    background-blend-mode:darken;
+}
+
+
+
+/*carousel*/
+.container{
+    width: 120%;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+.imgContainer{
+    width: 120%;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+    height: 120%;
+    width: 150%;
+}
+
+.img{
+    position:relative;
+    height: auto;
+    width: auto;
+    transition: 0.8s;
+}
+
+.button{
+    position: absolute;
+    width: 400px;
+    height: 370px;
+    transition: 0.8s;
+    
+}
+
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1{
+    width: 380px;
+    height: 280px;
+}
+
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2{
+    width:380px;
+    height: 280px;
+   
+}
+
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3{
+    width: 380px;
+    height: 280px;
+
+}
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4{
+    width: 380px;
+    height: 280px;
+    
+}
+
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5{
+    width: 380px;
+    height: 280px;
+
+}
+
+#slider6:target ~ .imgContainer #img6,
+#slider6:target ~ .imgContainer #button6{
+    width: 380px;
+    height: 280px;
+   
+}
+#slider7:target ~ .imgContainer #img7,
+#slider7:target ~ .imgContainer #button7{
+    width: 380px;
+    height: 280px;
+  
+}
+
+#slider1:target ~ .imgContainer{
+    left: 40%;
+}
+#slider2:target ~ .imgContainer{
+    left: 30%;
+}
+#slider3:target ~ .imgContainer{
+    left: 10%;
+}
+#slider4:target ~ .imgContainer{
+    left: 0%;
+}
+#slider5:target ~ .imgContainer{
+    left: -10%;
+}
+#slider6:target ~ .imgContainer{
+    left: -30%;
+}
+#slider7:target ~ .imgContainer{
+    left: -60%;
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-top: -430px;
+    text-decoration:underline;
+}
+
+.gallery {
+    background-color: #ffd700;;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+
+.gallery img {
+    width: 200px;
+    height: 280px;
+    cursor: pointer;
+    padding: 15px;
+
+   
+}
+
+.filter-section {
+    padding: 20px;
+    text-align: right;
+    
+}
+
+.filter-section h3 {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

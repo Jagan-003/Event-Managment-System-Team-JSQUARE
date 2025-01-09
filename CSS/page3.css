@@ -1,0 +1,86 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Dark background matching the homepage */
+    color: white; /* White text for contrast */
+}
+
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    color: #ffd700; /* Gold color for the header */
+    font-size: 36px;
+}
+
+#registration {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333; /* Darker background for the form section */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f0a500; /* Light gold for labels */
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222; /* Darker input fields */
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #ffd700; /* Gold color for the submit button */
+    color: black;
+    padding: 15px 0;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #f0a500; /* Slightly darker gold on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #registration {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
